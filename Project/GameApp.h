@@ -18,6 +18,7 @@
 @author	濱田　享
 *//********************************/
 class CGameApp : public CSingleGameApplication {
+	#pragma region Mof Game Libraryの既定のtemplateメソッド
 public:
 	/*************************************************************************//*!
 			@brief			コンストラクタ
@@ -65,4 +66,8 @@ public:
 							それ以外	失敗、エラーコードが戻り値となる
 	*//**************************************************************************/
 	virtual MofBool Release(void);
+	#pragma endregion
+
+private:
+	float px, py;
 };
