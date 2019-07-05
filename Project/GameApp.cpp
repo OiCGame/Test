@@ -22,6 +22,9 @@ MofBool CGameApp::Initialize(void){
 	px = g_pGraphics->GetTargetWidth( ) * 0.5f;
 	py = g_pGraphics->GetTargetHeight( ) * 0.5f;
 
+	vx = 1;
+	vy = 0;
+
 	return TRUE;
 }
 /*************************************************************************//*!
@@ -34,6 +37,11 @@ MofBool CGameApp::Initialize(void){
 MofBool CGameApp::Update(void){
 	//キーの更新
 	g_pInput->RefreshKey();
+
+	//移動
+	px += vx;
+	py += vy;
+
 	return TRUE;
 }
 /*************************************************************************//*!

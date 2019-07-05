@@ -70,4 +70,5 @@ public:
 
 private:
 	float px, py;
+	float vx, vy;
 };
