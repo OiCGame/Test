@@ -22,7 +22,7 @@ MofBool CGameApp::Initialize(void){
 	px = g_pGraphics->GetTargetWidth( ) * 0.5f;
 	py = g_pGraphics->GetTargetHeight( ) * 0.5f;
 
-	vx = 1;
+	vx = 5;
 	vy = 0;
 
 	return TRUE;
